@@ -1,0 +1,38 @@
+{% extends 'userbase.html' %}
+{% load static %}{% block title %}<title>userEdit</title>{% endblock %}
+{% block content %}
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<div>
+    <div class="task_edit_head">Edit </div>
+    
+<form method="post" class="task_edit_form">
+
+    {% csrf_token %}
+    <!-- {{form.as_p}} -->
+
+    <!-- <div class="log_form_input">
+		<label> Enter new name</label>
+	
+		{{ form.name}}</div>
+        <div class="log_form_input">
+            <label> Enter new title</label>
+        
+            {{ form.title}}</div>
+            <div class="log_form_input">
+                <label> Enter updated task</label>
+            
+                {{ form.task}}</div> -->
+
+{{form.as_p}}
+
+    <button type="submit" class="log_button">save</button>
+</form>
+</div>
+{% endblock content %}

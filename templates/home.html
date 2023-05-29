@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% load static %} 
+{% block title %}<title>usermainpage</title>{% endblock %}
+{% block content %}
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<div class="mainpage">
+
+
+  <div>
+    <h1 class="mainpage_heaing">TO-DO</h1>
+  </div>
+ <div>
+
+<p class="quotes">To achieve you need a to-do list. To achieve greatness you need a not-to-do list. Use this tip for your personal success and business goals. Start writing down aspirations you don’t need to get done right now and use as monthly moonshot goals. I prefer to call this a “not-yet-list.” It helps keep your “to-do-list” shorter without losing sight of a great idea. Eventually items from the not-yet-list move to the to-do-list.
+  — Erik Qualman</p>
+ </div>
+
+</div>
+{% endblock %}

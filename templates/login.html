@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}<title>userlogin</title>{% endblock %}
+
+{% block content %}
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<div class="login_form">
+
+    <form method="post" class="login_form">
+        <h1 class="log_head">Login</h1>
+{% csrf_token %}
+
+
+<div class="log_form_input">
+    <label> Enter Username</label>
+
+    {{ form.username}}</div>
+    
+<div class="log_form_input">
+    <label> Enter Password</label>
+
+    {{ form.password}}
+    
+    <button type="submit" class="log_button"> Login now</button>
+</div>
+
+
+    </form>
+</div>
+
+    {% endblock %}

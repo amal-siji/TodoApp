@@ -1,0 +1,39 @@
+{% extends 'userbase.html' %}
+{% load static %}
+{% block title %}<title>Add task</title>{% endblock %}
+{% block content %}
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<div class="addformmain">
+	<form method="post" class="add_form">
+		{% csrf_token %}		
+		<div class="task_add_head">Add Your Taskes Here</div>
+{{addform.as_p}}
+		
+{% comment %} <div class="log_form_input">
+    <label> Enter Name</label>
+
+    {{ addform.name}}</div>
+
+	<div class="log_form_input">
+		<label> Enter title</label>
+	
+		{{ addform.title}}</div>
+
+		<div class="log_form_input">
+			<label> Enter task</label>
+		
+			{{ addform.task}}</div> {% endcomment %}
+	
+
+
+
+<button type="submit" class="log_button"> Add Task </button>
+	</form></div>
+	{% endblock  %}

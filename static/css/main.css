@@ -1,0 +1,213 @@
+.main_container{
+    background-color: azure;
+}
+
+.mainpage
+{
+    background-color: green;
+    color: white;
+    height: 140px;
+}
+.mainpage_heaing{
+    margin-left: 700px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:120px;
+}
+
+body{
+    background-image: url('../images/education-day-arrangement-table-with-copy-space.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.quotes{
+    background-color: rgb(46, 161, 161);
+    width: 700px;
+    height: 600px;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 90px;
+    font-size: 30px;
+    margin-left: 100px;
+
+}
+.reg_button{
+    width: 300px;
+    border-radius: 30px;
+    background-color: rgb(87, 124, 32);
+    font-size: 20px;
+    color: white;
+    height: 60px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+
+.signup{
+    margin-left: 480px;
+    color: white;margin-top: 100px;
+    padding: 20px;
+    
+    
+}
+.reg_form{
+
+ margin-left: 450px;
+ border-radius: 8px;
+ max-width: 500px;
+ font-size: 60px;
+
+}
+.reg_form_input{
+    width: 500px;  
+    padding: 5px;
+    color:  white;
+    font-size: 20px;
+  
+    
+  
+}
+input[type='text']{
+    width:400px;
+    height: 50px;
+    border-radius: 10px;
+}
+input[type='password']{
+    width:400px;
+    height: 50px;
+    border-radius: 10px;
+}
+input[type='email']{
+    width:400px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+
+.log_form_input{
+    width: 500px;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+  
+}
+.login_form{
+    margin-top: 120px;
+    margin-left: 150px;
+    border-radius: 30px;
+}
+.log_head{
+    color: white;
+    margin-bottom: 50px;
+    font-size: 60px;
+}
+.log_button{
+    width: 300px;
+    border-radius: 30px;
+    background-color: rgb(87, 124, 32);
+    font-size: 20px;
+    color: white;
+    height: 60px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.task_add_head{
+    color: white;
+    margin-bottom: 50px;
+    font-size: 60px;
+}
+.add_form{
+    margin-left: 400px;
+    color: white;
+}
+.addformmain{
+    margin-top: 200px;
+    color: white;
+    
+}
+.task_edit_head{
+    color: white;
+    margin-bottom: 50px;
+    font-size: 60px;
+    margin-left: 500px;}
+
+  .task_edit_form
+{
+    margin-left: 400px;
+    color: white;
+    font-size: 20px;
+}
+
+table{
+    background-color: rgb(15, 234, 234);
+    margin-left: 200px;
+    margin-top: 300px;
+    border-radius: 8px;
+
+}
+tr,th{
+   
+    color: black;
+    align-items: center;
+    padding: 10px;
+}
+
+.edit_btn{
+    width: 100px;
+    background-color:greenyellow;
+    height: 50px;
+    border-radius: 9px;
+}
+.delete_btn{
+    width: 100px;
+    background-color:red;
+    height: 50px;
+    border-radius: 9px;
+}
+
+.table-wrapper {
+	width: min(900px, 100% - 3rem);
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #444;
+   
+}
+
+caption,
+th,
+td {
+	padding: 1rem;
+	text-align: left;
+	line-height: 1.5;
+	color: white;
+}
+tr:nth-of-type(2n) {
+	background: hsl(0% 0% 05 / 0.1);
+}
+
+@media only screen and (max-width: 650px) {
+	th {
+		display: none;
+	}
+	td {
+		display: grid;
+		grid-template-columns: 15ch auto;
+	}
+
+	td::before {
+		content: attr(data-cell) ": ";
+		font-weight: 700;
+		text-transform: capitalize;
+	}
+}
+
+
+.addformmain{
+    color: white;
+}
