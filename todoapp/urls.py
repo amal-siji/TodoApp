@@ -6,7 +6,7 @@ urlpatterns = [
     path('userhome/',views.userhome,name="userhome"),
     path('edit/<int:id>/',views.edittask,name="edit"),
     path('delete/<int:id>',views.Deletetask,name="delete"),
-    # path('del/<str:item_id>', views.remove, name="del"),
+    
    
    
    
